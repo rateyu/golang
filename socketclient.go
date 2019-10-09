@@ -57,12 +57,16 @@ func httpGet(num2 int) {
 	resp, err := http.Get("http://127.0.0.1:8080/")
 		// handle error
 		if err != nil {
+                fmt.Println(err)
+		return
 	}
 
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 		// handle error
 		if err != nil {
+		fmt.Println(err)
+		return
 	}
 
 	fmt.Println(string(body),num2)
