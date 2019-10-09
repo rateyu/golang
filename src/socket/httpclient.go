@@ -76,7 +76,7 @@ func httpGet(num2 int) {
 
 func main()  {
 	//conn, err := net.Dial("tcp","127.0.0.1:9998")
-	var num int
+/*	var num int
 	for {
 		fmt.Println(num)
 		go testClient(num)
@@ -85,8 +85,7 @@ func main()  {
 			break
 		}
 	}
-
-/*
+*/
 	var num2 int
 	for {
 		//模拟http请求
@@ -97,7 +96,7 @@ func main()  {
 		}
 
 	}
-*/
+
 	for {
 		fmt.Println("i : runnging in main")
 		time.Sleep(time.Second*30)
